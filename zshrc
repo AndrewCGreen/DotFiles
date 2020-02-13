@@ -1,10 +1,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 #: Path to your oh-my-zsh installation.
-export ZSH="/Users/andrewgreen/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 #Andaconda
-export PATH="/Users/andrewgreen/anaconda3/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"
 
 #SF URL and TOKEN, not sure how this is different than the Floret tbh
 export SF_QUERY_URL="https://query.signalframe.com/"

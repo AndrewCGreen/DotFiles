@@ -1,4 +1,4 @@
-call plug#begin('/Users/andrewgreen/.vim/plugged')
+call plug#begin('$HOME/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
