@@ -42,7 +42,6 @@ colorscheme monokai
 set termguicolors
 set autoindent
 set showmatch
-let python_highlight_all=1
 set expandtab
 set ts=4
 syntax enable
