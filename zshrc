@@ -6,6 +6,8 @@ export ZSH="$HOME/.oh-my-zsh"
 #Andaconda
 export PATH="$HOME/anaconda3/bin:$PATH"
 
+export MMPATH="$HOME/Workspace/march-madness"
+
 #SF URL and TOKEN, not sure how this is different than the Floret tbh
 export SF_QUERY_URL="https://query.signalframe.com/"
 #Go
