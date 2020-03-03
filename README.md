@@ -1,3 +1,3 @@
-# dotfile
+# dotfiles
 
 run ./setup.py to symlinks
