@@ -30,9 +30,6 @@ export PYSPARK_PYTHON="$WRPATH/datasci/scripts/datasci_env/bin/python"
 # point to your EMR job path
 export USER_BUCKET="s3://wirelessregistry-emr-jobs/andrew/"
 
-# identify your cluster ID
-export USER_CLUSTER_ID="j-TWJAZGKL0FZ6" # for example, j-IHX5U8CJ0E02
-export ANDREW_CLUSTER="j-399B17SFE54K5"
 # enable the datasci.sh tool
 export PATH="$WRPATH/datasci/scripts:$PATH"
 
