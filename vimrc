@@ -11,7 +11,6 @@ Plug 'derekwyatt/vim-scala'
 Plug 'hdima/python-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
-Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 set updatetime=100
@@ -50,5 +49,3 @@ syntax enable
 
 " set width of nerdtree
 let g:NERDTreeWinSize=50
-
-
