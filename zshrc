@@ -4,14 +4,13 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 #Andaconda
-export PATH="$HOME/anaconda3/bin:$PATH"
+export PATH="$HOME/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 export MMPATH="$HOME/Workspace/march-madness"
 export LDPATH="$HOME/Workspace/LD"
+export TIPATH="$HOME/Workspace/titanic"
 
 
-#SF URL and TOKEN, not sure how this is different than the Floret tbh
-export SF_QUERY_URL="https://query.signalframe.com/"
 #Go
 export WRPATH="$HOME/Workspace/signal-graph"
 export GOPATH="$HOME/Workspace/signal-graph/backend"
@@ -48,9 +47,20 @@ function synchronize() {
 	git push
 }
 
+function mac-update(){
+    echo conda update --all
+    conda update --all
+    echo brew update
+    brew update
+    echo brew upgrade
+    brew upgrade
+    echo brew cask upgrade 
+    brew cask upgrade --greedy
+}
+
 #create virtual environment for datasci
 function datasci-activate() {
-  source $WRPATH/datasci/scripts/datasci_env/bin/activate
+# source $WRPATH/datasci/scripts/datasci_env/bin/activate  # commented out by conda initialize
 }
 
 ENABLE_CORRECTION="true"
@@ -77,3 +87,19 @@ plugins=(
 alias jn="jupyter notebook"
 
 source $ZSH/oh-my-zsh.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/andrewgreen/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/andrewgreen/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/andrewgreen/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/andrewgreen/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
