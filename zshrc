@@ -85,6 +85,7 @@ plugins=(
 
 #alias
 alias jn="jupyter notebook"
+alias pt="python photo-transfer-mac.py"
 
 source $ZSH/oh-my-zsh.sh
 
