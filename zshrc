@@ -9,7 +9,7 @@ export PATH="$HOME/anaconda3/bin:$PATH"  # commented out by conda initialize
 export MMPATH="$HOME/Workspace/march-madness"
 export LDPATH="$HOME/Workspace/LD"
 export TIPATH="$HOME/Workspace/titanic"
-
+export LAWPATH="$HOME/Workspace/law-search"
 
 #Go
 export WRPATH="$HOME/Workspace/signal-graph"

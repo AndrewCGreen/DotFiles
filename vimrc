@@ -3,8 +3,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'scrooloose/nerdtree'
 Plug 'airblade/vim-gitgutter'
 Plug 'andrewcgreen/vim-monokai'
 Plug 'derekwyatt/vim-scala'
@@ -14,6 +12,9 @@ Plug 'fatih/vim-go'
 call plug#end()
 
 set updatetime=100
+
+set spelllang=en_us
+set spell
 
 " lightline configs
 set laststatus=2
@@ -47,5 +48,17 @@ set expandtab
 set ts=4
 syntax enable
 
-" set width of nerdtree
-let g:NERDTreeWinSize=50
+
+" netrw or vex or sex
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
