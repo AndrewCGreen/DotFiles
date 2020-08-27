@@ -5,7 +5,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'andrewcgreen/vim-monokai'
-Plug 'derekwyatt/vim-scala'
+Plug 'altercation/vim-colors-solarized'
 Plug 'hdima/python-syntax'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
@@ -13,12 +13,12 @@ call plug#end()
 
 set updatetime=100
 
-set spelllang=en_us
-set spell
 
 " lightline configs
 set laststatus=2
-let g:lightline= { 'colorscheme':'seoul256',}
+"dark theme lightline
+"let g:lightline= { 'colorscheme':'seoul256',}
+let g:lightline= { 'colorscheme':'solarized',}
 set noshowmode
 
 " automatically updates the open vim files
@@ -37,11 +37,18 @@ let g:gitgutter_max_signs = 50
 " configure backspace
 set backspace=2
 
-syntax on
-colorscheme monokai
+syntax enable
+
+"dark theme 
+"colorscheme monokai
+
+"light mode
+set background=light
+colorscheme solarized
+let g:solarized_termcolors=256
 
 " python configs
-set termguicolors
+" set termguicolors
 set autoindent
 set showmatch
 set expandtab
