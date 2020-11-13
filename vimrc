@@ -17,8 +17,8 @@ set updatetime=100
 " lightline configs
 set laststatus=2
 "dark theme lightline
-"let g:lightline= { 'colorscheme':'seoul256',}
-let g:lightline= { 'colorscheme':'solarized',}
+let g:lightline= { 'colorscheme':'seoul256',}
+"let g:lightline= { 'colorscheme':'solarized',}
 set noshowmode
 
 " automatically updates the open vim files
@@ -43,9 +43,9 @@ syntax enable
 "colorscheme monokai
 
 "light mode
-set background=light
-colorscheme solarized
-let g:solarized_termcolors=256
+"set background=light
+"colorscheme solarized
+"let g:solarized_termcolors=256
 
 " python configs
 " set termguicolors
