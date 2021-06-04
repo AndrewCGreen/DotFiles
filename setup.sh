@@ -6,11 +6,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # vim
-ln -sv ${BASEDIR}/vimrc ~/.vimrc
-ln -sv ${BASEDIR}/vim/ ~/.vim
+ln -sf ${BASEDIR}/vimrc ~/.vimrc
+ln -sf ${BASEDIR}/vim/ ~/.vim
 
 # zsh
-ln -sv ${BASEDIR}/zshrc ~/.zshrc
+ln -sf ${BASEDIR}/zshrc ~/.zshrc
 
 # terminator
-ln -sv ${BASEDIR}/terminatorconfig ~/.config/terminator/config
+ln -sf ${BASEDIR}/terminatorconfig ~/.config/terminator/config
