@@ -1,6 +1,6 @@
 #!/bin/bash
 
-"sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -12,3 +12,5 @@ ln -sv ${BASEDIR}/vim/ ~/.vim
 # zsh
 ln -sv ${BASEDIR}/zshrc ~/.zshrc
 
+# terminator
+ln -sv ${BASEDIR}/terminatorconfig ~/.config/terminator/config
