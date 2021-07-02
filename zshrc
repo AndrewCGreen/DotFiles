@@ -10,6 +10,7 @@ export MMPATH="$HOME/Workspace/march-madness"
 export LDPATH="$HOME/Workspace/LD"
 export TIPATH="$HOME/Workspace/titanic"
 export LAWPATH="$HOME/Workspace/law-search"
+export GTAPATH="$HOME/Workspace/pygta"
 
 ZSH_THEME="robbyrussell"
 
