@@ -13,4 +13,4 @@ ln -sf ${BASEDIR}/vim/ ~/.vim
 ln -sf ${BASEDIR}/zshrc ~/.zshrc
 
 # terminator
-ln -sf ${BASEDIR}/terminatorconfig ~/.config/terminator/config
+#ln -sf ${BASEDIR}/terminatorconfig ~/.config/terminator/config
