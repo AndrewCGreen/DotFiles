@@ -56,7 +56,7 @@ plugins=(
 #alias
 alias jn="jupyter notebook"
 alias pt="python photo-transfer-mac.py"
-alias rpi="ssh pi@192.168.1.212"
+alias rpi="ssh pi@ BLAH BLAH 212"
 
 
 source $ZSH/oh-my-zsh.sh
